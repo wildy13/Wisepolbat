@@ -1,0 +1,647 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* START NAV */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.navbar img {
+    width: 90px;
+}
+
+.navbar .navbar-collapse {
+    justify-content: end;
+}
+
+.navbar .nav-item .dropdown-item {
+    font-size: 1.2rem;
+}
+
+.navbar .nav-item {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar .nav-link {
+    color: black !important;
+}
+
+.navbar .nav-item.login {
+    padding: 10px 0;
+}
+
+.navbar .nav-link.login {
+    color: #ffffff !important;
+    background-color: #7cdbfd;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.navbar .nav-link.active {
+    background: none !important;
+    border-radius: 0;
+    border-bottom: 3px solid #7cdbfd;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: none !important;
+}
+
+/* END NAV */
+
+
+/* BAGIAN HOME */
+.jumbotron {
+    margin: 0;
+    margin-top: 91px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron .container {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.jumbotron .container h1:nth-child(1) {
+    margin-bottom: 50px;
+}
+
+.jumbotron .container h1 {
+    margin: 20px 0;
+    font-size: 40px;
+    color: #fafafa;
+}
+
+.jumbotron .container a.btn {
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color: #7cdbfd;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.jumbotron p.desc {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* END BAGIAN HOME */
+
+
+/* BAGIAN TENTANG WBS */
+.tentangWBS {
+    height: 80vh;
+    padding: 0;
+}
+
+.tentangWBS .container.judulTentangWBS {
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+}
+
+.tentangWBS .container.judulTentangWBS hr.garisJudul {
+    border: 2px solid #7cdbfd;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.tentangWBS .container.judulTentangWBS .judul {
+    padding: 0px 30px;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tentangWBS .container.kontenTentangWBS {
+    margin-top: 150px;
+    padding: 10px 100px;
+    line-height: 40px;
+}
+
+.tentangWBS .container.kontenTentangWBS p {
+    text-align: center;
+    font-size: 23px;
+}
+
+/* END BAGIAN TENTANG WBS */
+
+
+/* BAGIAN TATA CARA PENGADUAN */
+.tataCaraPengaduan {
+    height: auto;
+    background-color: #7cdbfd;
+    display: block;
+    padding: 60px 0;
+}
+
+.tataCaraPengaduan .container.judulTataCaraPengaduan {
+    position: relative;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tataCaraPengaduan .container.judulTataCaraPengaduan hr.garisJudul {
+    border: 2px solid #fafafa;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.tataCaraPengaduan .container.judulTataCaraPengaduan .judul {
+    background-color: #7cdbfd;
+    padding: 0px 30px;
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tataCaraPengaduan .container.kontenTataCaraPengaduan .row {
+    margin-top: 80px;
+}
+
+.tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan {
+    min-height: 380px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan .card-title {
+    background-color: #7cdbfd;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan span.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+.tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan .card-text {
+    margin-top: 20px;
+}
+
+/* END BAGIAN TATA CARA PENGADUAN */
+
+
+/* BAGIAN BANTUAN */
+.bantuan {
+    height: auto;
+    padding: 60px 0;
+}
+
+.bantuan .container.judulBantuan {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+}
+
+.bantuan .container.judulBantuan hr.garisJudul {
+    border: 2px solid #7cdbfd;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.bantuan .container.judulBantuan .judul {
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    background-color: #fafafa;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+.bantuan .container.kontenBantuan {
+    margin-top: 80px;
+}
+
+.bantuan .container.kontenBantuan .panduan {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.bantuan .container.kontenBantuan ul {
+    margin: 30px 0 0 40px;
+    line-height: 35px;
+}
+
+.bantuan .container.kontenBantuan ul li span.bold {
+    font-weight: bold;
+}
+
+.bantuan .container.kontenBantuan .formPanduan {
+    margin-top: 70px;
+}
+
+.bantuan .container.kontenBantuan .formPanduan button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #7cdbfd;
+    border: none;
+    color: #fafafa;
+    display: none;
+}
+
+.bantuan .container.kontenBantuan .formPanduan .form-control {
+    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+}
+
+/* END BAGIAN BANTUAN */
+
+
+/* START HOME LOGIN REGISTER WRAPPER */
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../img/bgLoginRegister.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+/* END HOME LOGIN REGISTER WRAPPER */
+
+
+
+/* BAGIAN LOGIN */
+.loginRegister {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.loginRegister .cont {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    height: auto;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    min-width: 40%;
+    border-radius: 50px;
+    padding: 0 50px;
+    margin-top: 100px;
+}
+
+.loginRegister .cont.internal {
+    width: 70vw;
+}
+
+.loginRegister .cont .containerHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    margin-top: 15px;
+}
+
+.loginRegister .cont .containerHeader .garisHeader {
+    border: 2px solid #7cdbfd;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.loginRegister .cont .containerHeader .header {
+    font-size: 35px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.loginRegister .cont .formLoginRegister {
+    margin: 20px 0 10px 0;
+    padding: 0 40px;
+    z-index: 1;
+}
+
+.loginRegister .cont .formLoginRegister .form-group {
+    margin: 0 !important;
+}
+
+.loginRegister .cont .formLoginRegister label {
+    font-size: 13px
+}
+
+.loginRegister .cont .formLoginRegister .alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 99;
+}
+
+.loginRegister .cont .formLoginRegister .loginBGBiru {
+    width: 100%;
+    margin: 20px 0 15px 0;
+    border-radius: 50px;
+    padding: 8px 0;
+    background-color: #7cdbfd;
+    border: none;
+}
+
+.loginRegister.loginAdmin .cont.loginAdmin .formLoginRegister .loginBGBiru {
+    margin: 40px 0 15px 0;
+}
+
+.loginRegister .cont .formLoginRegister .loginBGKuning {
+    width: 100%;
+    border-radius: 50px;
+    padding: 8px 0;
+    background-color: #e3dc94;
+    border: none;
+}
+
+.loginRegister .cont .formLoginRegister span.daftar,
+.loginRegister .cont .formLoginRegister span.lupaPassword {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+
+.loginRegister .cont .formLoginRegister a.lupaPassword {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.loginRegister .cont .formLoginRegister a.daftar {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7cdbfd;
+}
+
+/* END BAGIAN LOGIN */
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .loginRegister .cont,
+    .loginRegister .cont.internal {
+        width: 98vw !important;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+
+    .loginRegister .cont.internal .containerHeader .header {
+        font-size: 25px !important;
+    }
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .jumbotron {
+        height: auto;
+    }
+
+    .jumbotron .container h1 {
+        margin: 20px 0;
+        font-size: 30px;
+        color: #fafafa;
+    }
+
+    .tentangWBS .container.kontenTentangWBS.mobile {
+        padding: 0 30px;
+        margin-top: 80px;
+    }
+
+    .tentangWBS.mobile {
+        height: auto;
+        padding: 0 0 100px 0;
+    }
+
+    .tentangWBS .container.kontenTentangWBS p.konten {
+        font-size: 19px;
+    }
+
+    .tentangWBS .container.judulTentangWBS .judul.mobile {
+        font-size: 30px;
+    }
+
+    .tataCaraPengaduan .container.judulTataCaraPengaduan span.judul.mobile {
+        font-size: 30px;
+    }
+
+    .tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan:nth-child(1) {
+        min-height: 300px;
+        margin: 5px 0;
+    }
+
+
+    .bantuan .container.judulBantuan span.judul {
+        font-size: 30px;
+    }
+
+    .login {
+        padding: 0;
+        /* height: auto; */
+    }
+
+    .login .cont {
+        padding: 20px !important;
+        min-width: 90%;
+        border: 10px solid blue !important;
+    }
+
+    .login .cont .containerHeader {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .login .cont .containerHeader .header {
+        font-size: 25px;
+    }
+
+    .login .cont .formLoginRegister {
+        padding: 0 15px;
+        min-width: 100%;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+    .login .cont .formLoginRegister span.daftar {
+        font-size: 13px;
+    }
+
+    .login .cont .formLoginRegister a.daftar {
+        font-size: 17px;
+    }
+
+    .login .cont .formLoginRegister .loginBGBiru {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .login .cont .formLoginRegister .loginBGKuning {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .loginRegister {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .loginRegister .cont {
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+
+
+    .loginRegister .cont,
+    .loginRegister .cont.internal {
+        width: 70vw;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .loginRegister .cont .containerHeader span {
+        font-size: 30px !important;
+    }
+
+    .loginRegister .cont .formLoginRegister,
+    .loginRegister .cont .formLoginRegister.internal {
+        padding: 0;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 999.98px) {
+
+    .navbar {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .navbar .nav-item {
+        margin-left: inherit;
+        max-width: fit-content;
+    }
+
+    .navbar .dropdown-menu {
+        background: none !important;
+        border: none;
+    }
+
+    .navbar .nav-item.dropdown {
+        display: block;
+    }
+
+    .tentangWBS {
+        height: auto;
+        padding: 0 0 150px 0;
+    }
+
+    .tentangWBS .container.kontenTentangWBS {
+        padding: 10px 50px;
+        margin-top: 100px;
+    }
+
+    .tentangWBS .container.kontenTentangWBS p {
+        font-size: 22px;
+    }
+
+    .tentangWBS .container.judulTentangWBS .judul {
+        font-size: 35px;
+    }
+
+    .tentangWBS .container.judulTentangWBS {
+        margin-top: 60px;
+        height: 60px;
+    }
+
+    .tataCaraPengaduan {
+        padding: 60px 0;
+        height: auto;
+    }
+
+    .tataCaraPengaduan .container.judulTataCaraPengaduan span.judul {
+        font-size: 35px;
+    }
+
+    .tataCaraPengaduan .container.kontenTataCaraPengaduan .row {
+        margin-top: 80px;
+    }
+
+    .tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan {
+        min-height: 430px;
+    }
+
+    .tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan span.highlight {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .tataCaraPengaduan .container.kontenTataCaraPengaduan .row .card.tata-cara-pengaduan .card-text {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+
+    .bantuan .container.judulBantuan .judul {
+        font-size: 35px;
+    }
+
+    .login .cont {
+        width: 60%;
+        padding: 0 50px;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}

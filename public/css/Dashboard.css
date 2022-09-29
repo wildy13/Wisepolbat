@@ -1,0 +1,872 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* START NAVBAR TOP & VERTICAL */
+.navTop {
+    /* border: 1px solid; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: #fafafa;
+    height: 80px;
+    z-index: 1;
+    /* margin-left: 300px; */
+}
+
+.navTop .dropdown {
+    position: absolute;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    /* background-color: #e3dc94; */
+    right: 0;
+}
+
+.navTop .dropdown,
+.navTop .dropdown .btn {
+    height: 100%;
+}
+
+.navTop .dropdown .btn {
+    padding: 0 20px;
+}
+
+.navTop .dropdown img {
+    width: 40px;
+}
+
+.navTop .dropdown-toggle::after {
+    display: none;
+}
+
+.navVertical {
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    background-color: #7cdbfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 0 10px;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 2;
+}
+
+.navVertical .container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.navVertical .toggle-button {
+    background: #7cdbfd;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    padding: 0 !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* padding: 100px; */
+    height: 60px;
+    width: 30px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.navVertical .toggle-button input {
+    width: 35px;
+    height: 35px;
+    border: 3px solid blue;
+    margin: 0 !important;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.navVertical .toggle-button i {
+    font-size: 30px;
+    z-index: 1;
+    color: #fafafa;
+}
+
+.navVertical .toggle-button input:checked~i {
+    transform: rotateY(180deg);
+}
+
+.navVertical .navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 3px solid #e9eae7;
+}
+
+.navVertical .navbar-brand img {
+    width: 100px;
+}
+
+.navVertical .verticalMenues {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navVertical .verticalMenues .notification {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    background-color: #fafafa;
+    position: relative;
+}
+
+.navVertical .verticalMenues .notification .badge {
+    top: 0;
+}
+
+.navVertical .verticalMenues .notification img {
+    width: 30px;
+}
+
+.navVertical .verticalMenues .nav-item:not(.notification) {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    margin: 10px 0;
+    width: 90%;
+    border-radius: 50px;
+    min-height: 50px;
+    background-color: #fafafa;
+}
+
+.navVertical .verticalMenues .nav-item:not(.notification) .nav-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    color: black;
+    justify-content: center;
+}
+
+.navVertical .verticalMenues .nav-item:not(.nav-item.aduanBaru):hover {
+    background-color: #e9eae7;
+}
+
+.navVertical .verticalMenues .nav-item:not(.notification) img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.navVertical .verticalMenues .nav-item:not(.notification) i {
+    color: black;
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.navVertical .verticalMenues .nav-item:not(.notification) span {
+    color: black;
+}
+
+.navVertical .verticalMenues .nav-item.aduanBaru:hover {
+    background-color: #65c3e6;
+}
+
+/* END NAVBAR TOP & VERICAL */
+
+
+/* START CONTENT PELAPOR */
+.content {
+    height: auto;
+    margin: 80px 0 0 330px;
+    padding: 50px 50px;
+}
+
+/* START MAIN PAGE */
+.content .container.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content .container.header .garis {
+    border: 2px solid #7cdbfd;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.content .container.header .judul {
+    font-size: 35px;
+    background-color: white;
+    padding: 0 20px;
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+}
+
+.content.pelapor .container.kriteria_tataCaraPengaduan {
+    line-height: 32px;
+    margin-bottom: 90px;
+}
+
+.content.pelapor .container.kriteria_tataCaraPengaduan p {
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 60px;
+}
+
+.content.pelapor .container.kriteria_tataCaraPengaduan ul {
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.content.pelapor .container.kriteria_tataCaraPengaduan ol li {
+    margin-left: 40px;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.content.pelapor .container.kriteria ul span {
+    font-weight: bold;
+}
+
+
+/* END MAIN PAGE */
+
+
+
+/* START LIST PENGADUAN DAN NOTIFIKASI */
+.content .table {
+    /* border: 5px solid; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+.content .table caption {
+    caption-side: top;
+    font-size: 30px;
+    background-color: #7cdbfd;
+    color: #fafafa;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.content .table tr {
+    text-align: center;
+}
+
+.content .table .btn {
+    background-color: #fafafa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+    margin: 1px;
+}
+
+.content .table .btn:hover {
+    background-color: #e9eae7;
+}
+
+.content .table .btn.btnDetail i {
+    color: #7cdbfd;
+}
+
+.content .table .btn.btnDelete i {
+    color: #e3dc94;
+}
+
+.modal .modal-dialog .modal-content {
+    border-radius: 25px;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 100px;
+    background-color: #7cdbfd;
+    color: #fafafa;
+    position: relative;
+}
+
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.modal .modal-dialog .modal-content .modal-header .close span {
+    color: #fafafa;
+    font-size: 30px;
+    display: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+    padding: 50px 70px;
+}
+
+.modal .btnClose {
+    background-color: #7cdbfd;
+    color: #fafafa;
+}
+
+.modal .btnDelete {
+    background-color: #e3dc94;
+    color: #fafafa;
+}
+
+.modal.modalDelete .modal-dialog .modal-content .modal-body {
+    text-align: center;
+}
+
+.modal.modalDelete .modal-dialog .modal-content .modal-body i {
+    font-size: 60px;
+}
+
+.modal.modalDelete .modal-dialog .modal-content .modal-body p {
+    margin-top: 40px;
+}
+
+/* END LIST PENGADUAN DAN NOTIFIKASI */
+
+
+
+.content .card {
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.content .card .card-header {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 30px;
+    font-size: 30px;
+    color: #fafafa;
+    background-color: #7cdbfd;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.content .card .container {
+    margin-bottom: 25px;
+    padding: 50px 70px;
+}
+
+.content .card .container .form-group.button {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .card .container .btn {
+    margin-bottom: 10px;
+    border-radius: 50px;
+    padding: 10px 0;
+    font-size: 17px;
+    color: #fafafa;
+}
+
+.content .card .container .btn i {
+    margin-right: 8px;
+}
+
+.content .card .container .btn.btnReset {
+    background-color: #e3dc94;
+}
+
+.content .card .container .btn.btnSubmit {
+    background-color: #7cdbfd;
+}
+
+
+/* START FORM PENGADUAN */
+.content .card.formPengaduan .container .formPengaduan .form-group.tambah {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .card.formPengaduan .container .formPengaduan .btnTambah {
+    background-color: #7cdbfd;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    color: #fafafa;
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.content .card.formPengaduan .container .formPengaduan .btnTambah i {
+    margin-right: 5px;
+}
+
+.content .card.formPengaduan .container .formPengaduan .btnDelete {
+    /* border: 1px solid; */
+    position: absolute;
+    color: #e3dc94;
+    font-size: 20px;
+}
+
+.content .card.formPengaduan .container .formPengaduan .btnDelete::before {
+    height: 40px;
+    width: 40px;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.content .card.formPengaduan .container .formPengaduan .btnDelete:hover::before {
+    background-color: #e9eae7;
+    cursor: pointer;
+}
+
+.content .card.formPengaduan .container .formPengaduan .custom-file-label {
+    overflow: hidden;
+    z-index: 0;
+}
+
+.content .card.formPengaduan .container .formPengaduan .custom-file-label::after {
+    content: none;
+}
+
+.content .card.formPengaduan .container .formPengaduan .form-group.notice ul {
+    margin: 10px 0 0 30px;
+}
+
+/* END FORM PENGADUAN */
+
+
+/* START FAQ */
+.content .card.faq .container .list-group-item {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.content .card.faq .container .list-group-item .pertanyaan {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.content .card.faq .container .list-group-item .pertanyaan:hover {
+    cursor: pointer;
+}
+
+.content .card.faq .container .list-group-item .pertanyaan i {
+    font-size: 30px;
+    margin-right: 20px;
+    transform: rotate(0);
+    transition: .1s ease-in;
+}
+
+.content .card.faq .container .list-group-item .pertanyaan i.rotate {
+    transform: rotate(90deg);
+}
+
+.content .card.faq .container .list-group-item ul.jawaban {
+    margin: 10px 0 10px 40px !important;
+}
+
+.content .card.faq .container .list-group-item .container.jawaban {
+    margin: 0;
+    padding: 0;
+    transition: .1s ease-in;
+}
+
+.content .card.faq .container .list-group-item .container.jawaban .jawaban {
+    margin: 0;
+    display: none;
+}
+
+.content .card.faq .container .list-group-item .container.jawaban.expand {
+    padding: 0px 0 20px 0;
+}
+
+.content .card.faq .container .list-group-item .container.jawaban.expand .jawaban {
+    display: inherit;
+}
+
+/* END FAQ */
+
+
+/* START PROFIL SAYA AKUN */
+.content .card .container.menu {
+    padding: 0;
+    margin: 0;
+}
+
+.content .card .container.menu ul.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    border-bottom: 2px solid #e9eae7;
+    text-decoration: none;
+}
+
+.content .card .container.menu ul.menu .menu-item {
+    margin-right: 10px;
+    padding: 5px 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: black;
+}
+
+.content .card .container.menu ul.menu .menu-item:not(.menu-item.active):hover {
+    color: #7cdbfd;
+}
+
+.content .card .container.menu ul.menu a {
+    text-decoration: none;
+}
+
+.content .card .container.menu ul.menu .menu-item.active {
+    background-color: #7cdbfd;
+    color: #fafafa;
+}
+
+.content .card .container .formProfil .colFotoProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.content .card .container .formProfil .fotoProfil {
+    width: 150px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+/* END PROFIL SAYA AKUN */
+
+/* END CONTENT PELAPOR */
+
+
+/* START CONTENT ADMIN */
+
+.content .table .status span {
+    padding: 3px 10px;
+    border-radius: 50px;
+    background-color: #e3dc94;
+    color: white;
+    height: auto !important;
+    display: inline-block;
+}
+
+.content .table .status.hijau span {
+    background-color: #74e665;
+}
+
+.content .table .status.biru span {
+    background-color: #7cdbfd;
+}
+
+.content .table .status.belumDibaca span {
+    background-color: #e3dc94;
+}
+
+.content .table .status.dibaca span {
+    background-color: #7cdbfd;
+}
+
+.content .table .status.kuning span {
+    background-color: #e3dc94;
+}
+
+/* END CONTENT ADMIN */
+
+
+/* START MODAL TANGGAPAN */
+
+.modalTanggapan .tanggapanBody {
+    border-radius: 8px;
+    margin: 25px 45px;
+}
+
+
+.tanggapanManajemenPelapor {
+    display: none;
+}
+
+.tanggapanManajemenInvestigasi {
+    display: none;
+}
+
+.modalTanggapan .tanggapanBody .form-row span {
+    padding: 10px 10px;
+    display: block;
+    border-radius: 15px;
+    color: black;
+}
+
+.modalTanggapan .tanggapanBody .form-row.saya span {
+    background-color: #7cdbfd;
+}
+
+.modalTanggapan .tanggapanBody .form-row.bukanSaya span {
+    background-color: #74e665;
+}
+
+.modalTanggapan .tanggapanBody .form-row {
+    padding: 3px 0;
+}
+
+/* END MODAL TANGGAPAN */
+
+
+.btnKuning {
+    background-color: #74e665;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .navVertical {
+        width: 260px;
+    }
+
+    .navVertical .navbar-brand img {
+        width: 110px;
+    }
+
+    .navVertical .verticalMenues .notification {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navVertical .verticalMenues .notification img {
+        width: 20px;
+    }
+
+    .navVertical .verticalMenues .nav-item:not(.notification) {
+        padding: 0 10px;
+    }
+
+    .navVertical .verticalMenues .nav-item:not(.notification) img {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    .navVertical .verticalMenues .nav-item:not(.notification) i {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .navVertical .verticalMenues .nav-item:not(.notification) span {
+        font-size: 15px;
+    }
+
+    /* END NAVBAR TOP & VERTICAL */
+
+    /* START CONTENT PELAPOR */
+    .content {
+        padding: 20px 10px;
+    }
+
+    /* START LIST PENGDUAN DAN NOTIFIKASI */
+    .content .table {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .content .table .caption {
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .content .table thead {
+        display: none;
+    }
+
+    .content .table,
+    .content .table tbody,
+    .content .table tbody tr,
+    .content .table tbody tr td {
+        width: 100%;
+        display: block;
+    }
+
+    .content .table tbody tr {
+        position: relative;
+        border: 2px solid #e9eae7;
+    }
+
+    .content .table tbody tr:last-child {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .content .table tbody tr td:not(.td-btn) {
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .content .table tbody tr td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .modal .modal-dialog .modal-content .modal-body {
+        padding: 40px 40px;
+        font-size: 15px;
+    }
+
+    /* END LIST PENGADUAN DAN NOTIFIKASI */
+
+    .content .card {
+        font-size: 15px;
+    }
+
+    .content .card .card-header {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .content .card .container {
+        padding: 30px 20px;
+    }
+
+    /* START FORM PENGADUAN */
+
+    .content .card.formPengaduan .container .formPengaduan .form-row {
+        margin-bottom: 40px;
+    }
+
+    #btn-download-lampiran {
+        display: block;
+        background-color: #74e665 !important;
+    }
+
+    /* END FORM PENGADUAN */
+
+
+    /* START FAQ */
+    .content .card.faq .container .list-group-item {
+        font-size: 15px;
+    }
+
+    .content .card.faq .container .list-group-item .pertanyaan {
+        font-size: 20px;
+    }
+
+    /* END FAQ */
+
+
+    /* END CONTENT PELAPOR */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    body .navVertical {
+        width: 260px;
+        transform: translateX(-255px);
+    }
+
+    .navVertical .toggle-button {
+        height: 55px;
+        width: 25px;
+    }
+
+    .navVertical .toggle-button input {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navVertical .toggle-button i {
+        font-size: 25px;
+    }
+
+    .navVertical .container {
+        overflow-y: auto;
+        /* -ms-overflow-style: none;  IE dan EDGE */
+    }
+
+    /* .navVertical .container::-webkit-scrollbar{
+        display: none;
+        width: 0 !important;
+    } */
+
+    .navVertical .verticalMenues {
+        margin-bottom: 100px;
+    }
+
+    .content .card.formPengaduan .container .formPengaduan .colDelete {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content .card.formPengaduan .container .formPengaduan .colDelete .btnDelete {
+        position: inherit;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 999.98px) {
+
+    /* START NAVBAR TOP & VERTICAL */
+    .navTop .dropdown-menu-lg-right {
+        right: 0;
+        left: auto;
+    }
+
+    .navVertical {
+        z-index: 1;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, .2);
+        transform: translateX(-290px);
+        transition: .5s;
+    }
+
+    .navVertical .toggle-button {
+        display: flex;
+    }
+
+    .navVertical.slide {
+        transform: translateX(0);
+    }
+
+    /* END NAVBAR TOP & VERTICAL */
+
+    /* START CONTENT PELAPOR */
+    .content {
+        margin: 80px 0 0 0;
+    }
+
+    /* END CONTENT PELAPOR */
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
